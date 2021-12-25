@@ -45,9 +45,11 @@ p{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    word-wrap: break-word;
 }
 .content{
-    width: 400px;
+    
+    width: 25em;
     height: 300px;
     flex-direction: column;
     display: flex;
@@ -58,6 +60,11 @@ p{
     padding: 15px;
     box-shadow: 10px 20px 15px rgb(97, 95, 95);
 	border-radius: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+      width: 12em;
+}
 }
 button{
     margin-top: auto; 
